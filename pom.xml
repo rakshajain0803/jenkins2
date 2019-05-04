@@ -104,6 +104,7 @@
                   <arg>-Xbootclasspath/p:${annotatedJdk}</arg>
               </compilerArgs>
           </configuration>
+          <version>3.6.1</version>
       </plugin>
     </plugins>
   </build>
