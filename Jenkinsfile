@@ -4,15 +4,19 @@ node
     {
         git "https://github.com/rakshajain0803/jenkins2"
     }
-    stage('compile-package')
+    stage('compile')
     {
-        bat "mvn clean install -DskipTests"
+        bat "mvn clean compile"
     }
     stage('test')
     {
         bat "mvn test"
     }
-    stage('output')
+    stage('install')
+    {
+        bat "mvn install -DskipTests"
+    }
+    stage('execute')
     {
         bat "java -jar ./target/my-app-1.0-SNAPSHOT.jar"
     }
