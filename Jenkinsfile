@@ -10,7 +10,7 @@ stage('compile-package')
 }
 stage('output')
 {
-    bat "cd C:\\Program Files (x86)\\Jenkins\\workspace\\jenkins2MavenPipeline\\target"
-    bat "java -jar my-app-1.0-SNAPSHOT.jar"
+    
+    bat "java -jar ./target/my-app-1.0-SNAPSHOT.jar"
 }
 }
