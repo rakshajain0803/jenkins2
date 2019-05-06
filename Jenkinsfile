@@ -10,6 +10,6 @@ stage('compile-package')
 }
 stage('output')
 {
-    bat "java -jar my-app-1.0-SNAPSHOT.jar"
+    bat "java -jar /target/my-app-1.0-SNAPSHOT.jar"
 }
 }
