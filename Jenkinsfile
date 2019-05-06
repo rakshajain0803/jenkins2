@@ -6,7 +6,11 @@ node
     }
     stage('compile-package')
     {
-        bat "mvn clean install"
+        bat "mvn clean install -DskipTests"
+    }
+    stage('test')
+    {
+        bat "mvn test"
     }
     stage('output')
     {
